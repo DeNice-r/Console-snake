@@ -1,6 +1,4 @@
 ﻿#include "pch.h"
-#include "vivec.h"
-#include <ctime>
 
 using namespace std;
 
@@ -165,7 +163,7 @@ int main() {
 		}
 		auto tp1 = chrono::steady_clock::now() - startt;
 		SetConsoleCursorPosition(hOut, playtimes);
-		printf("%u", (uint)chrono::duration_cast<chrono::seconds>(tp1).count()+666);
+		printf("%u", (uint)chrono::duration_cast<chrono::seconds>(tp1).count());
 		SetConsoleCursorPosition(hOut, scorepts);
 		printf("%u", score);
 		this_thread::sleep_for(chrono::milliseconds(period - chrono::duration_cast<chrono::milliseconds>(chrono::steady_clock::now() - spent).count()));
