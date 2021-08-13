@@ -92,8 +92,6 @@ int main() {
 					}
 					break;
 				default:
-					SetConsoleCursorPosition(hOut, COORD{ size.X + rand() % 60, size.Y + rand() % 40 });
-					cout << "eblan?";
 					break;
 				}
 				imp = 0;
